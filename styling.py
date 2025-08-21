@@ -21,8 +21,9 @@ def style_table(df, hide_index=True, max_rows=20):
         'header_bg': '#141C52',
         'header_font': '#F9F9F9',
         'cell_bg': '#75D0E8',
-        'cell_font': '#F9F9F9',
-        'hover_bg': '#783ABB'
+        'cell_font': '#141C52',
+        'hover_bg': '#783ABB',
+        'hover_font': '#F9F9F9'
     }
 
     # Define the styles
@@ -38,7 +39,8 @@ def style_table(df, hide_index=True, max_rows=20):
                    ('color', theme['cell_font']),
                    ('padding', '8px')]},
         {'selector': 'tr:hover td', # Style rows on hover
-         'props': [('background-color', theme['hover_bg'])]}
+         'props': [('background-color', theme['hover_bg']),
+                   ('color', theme['hover_font'])]}
     ]
 
     # Apply the styles
