@@ -6,8 +6,8 @@ This repository contains Jupyter notebooks demonstrating sports analytics using 
 
 The `pythagorean-won-loss-formula/` directory contains:
 
-- **`prepare.ipynb`** - Data preparation notebook that loads sports data and sets up ArcticDB storage [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nrandell/arcticdb-notebooks/pythagorean-won-loss-formula/prepare.ipynb)
-- **`sports_from_arctic.ipynb`** - Main analysis notebook with statistical modeling and visualizations [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nrandell/arcticdb-notebooks/pythagorean-won-loss-formula/sports_from_arctic.ipynb)
+- **`prepare.ipynb`** - Data preparation notebook that loads sports data and sets up ArcticDB storage [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Something-Else-Studio/arcticdb-notebooks/pythagorean-won-loss-formula/prepare.ipynb)
+- **`sports_from_arctic.ipynb`** - Main analysis notebook with statistical modeling and visualizations [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Something-Else-Studio/arcticdb-notebooks/pythagorean-won-loss-formula/sports_from_arctic.ipynb)
 - **`sports.csv`** - Dataset containing game-level data across multiple sports leagues
 
 ## 🏆 Key Features
