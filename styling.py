@@ -1073,6 +1073,168 @@ def export_plot_html(fig, filename, title="Interactive Chart"):
     print(f"Exported: {filename}")
 
 
+def export_plot_json(fig, filename, separate_files=False):
+    """
+    Export a Plotly figure as JSON data compatible with react-plotly.js.
+    
+    Args:
+        fig: Plotly figure object
+        filename: Output filename (should end with .json)
+        separate_files: If True, exports data/layout/config as separate files
+        
+    Returns:
+        dict: JSON object with data, layout, and config keys
+    """
+    import json
+    import numpy as np
+    from datetime import datetime, date
+    
+    if not PLOTLY_AVAILABLE:
+        raise ImportError("Plotly not available. Install with: pip install plotly")
+    
+    # Custom JSON encoder for numpy types and dates
+    class PlotlyJSONEncoder(json.JSONEncoder):
+        def default(self, obj):
+            if isinstance(obj, np.integer):
+                return int(obj)
+            elif isinstance(obj, np.floating):
+                return float(obj)
+            elif isinstance(obj, np.ndarray):
+                return obj.tolist()
+            elif isinstance(obj, (datetime, date)):
+                return obj.isoformat()
+            return super().default(obj)
+    
+    # Extract data, layout, and config from the figure
+    data = fig.data
+    layout = fig.layout
+    
+    # React-plotly.js compatible config
+    config = {
+        'displayModeBar': True,
+        'displaylogo': False,
+        'modeBarButtonsToRemove': ['pan2d', 'lasso2d', 'select2d'],
+        'responsive': True,
+        'scrollZoom': True,
+        'doubleClick': 'reset',
+        'showTips': False,
+        'toImageButtonOptions': {
+            'format': 'png',
+            'filename': 'chart',
+            'height': 500,
+            'width': 700,
+            'scale': 1
+        }
+    }
+    
+    # Optimize layout for responsive Next.js rendering
+    # Convert Plotly layout object to dictionary properly
+    layout_dict = layout.to_plotly_json()
+    layout_dict.update({
+        'autosize': True,
+        'margin': {'l': 50, 'r': 50, 't': 50, 'b': 50},
+        'paper_bgcolor': 'white',
+        'plot_bgcolor': 'white'
+    })
+    
+    # Remove width/height for responsive behavior
+    layout_dict.pop('width', None)
+    layout_dict.pop('height', None)
+    
+    # Convert to JSON-serializable format
+    # Convert Plotly data traces to JSON format
+    data_json = [trace.to_plotly_json() for trace in data]
+    
+    json_data = {
+        'data': data_json,
+        'layout': layout_dict,
+        'config': config
+    }
+    
+    if separate_files:
+        # Export as separate files
+        base_name = filename.replace('.json', '')
+        
+        # Export data
+        data_file = f"{base_name}_data.json"
+        with open(data_file, 'w', encoding='utf-8') as f:
+            json.dump(json_data['data'], f, indent=2, cls=PlotlyJSONEncoder)
+        print(f"Exported data: {data_file}")
+        
+        # Export layout
+        layout_file = f"{base_name}_layout.json"
+        with open(layout_file, 'w', encoding='utf-8') as f:
+            json.dump(json_data['layout'], f, indent=2, cls=PlotlyJSONEncoder)
+        print(f"Exported layout: {layout_file}")
+        
+        # Export config
+        config_file = f"{base_name}_config.json"
+        with open(config_file, 'w', encoding='utf-8') as f:
+            json.dump(json_data['config'], f, indent=2)
+        print(f"Exported config: {config_file}")
+        
+    else:
+        # Export as single file
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(json_data, f, indent=2, cls=PlotlyJSONEncoder)
+        print(f"Exported: {filename}")
+    
+    return json_data
+
+
+# Example usage in notebook cells:
+# # Export single JSON file for React Plotly
+# json_data = export_plot_json(fig, "chart_data.json")
+# 
+# # Export separate data/layout/config files
+# export_plot_json(fig, "chart_data.json", separate_files=True)
+# 
+# # Use in React component:
+# import Plot from 'react-plotly.js';
+# import chartData from './chart_data.json';
+# 
+# function MyChart() {
+#   return (
+#     <Plot
+#       data={chartData.data}
+#       layout={chartData.layout}
+#       config={chartData.config}
+#       useResizeHandler={true}
+#       style={{width: "100%", height: "100%"}}
+#     />
+#   );
+# }
+
+
+def export_plot(fig, base_filename, title="Interactive Chart", separate_json_files=False):
+    """
+    Export a Plotly figure to both HTML and JSON formats in one go.
+    
+    Args:
+        fig: Plotly figure object
+        base_filename: Base filename (without extension) for exports
+        title: Title for the HTML page
+        separate_json_files: If True, exports JSON as separate data/layout/config files
+    
+    Returns:
+        dict: JSON data that was exported
+    """
+    if not PLOTLY_AVAILABLE:
+        raise ImportError("Plotly not available. Install with: pip install plotly")
+    
+    # Generate filenames
+    html_filename = f"{base_filename}.html"
+    json_filename = f"{base_filename}.json"
+    
+    # Export HTML version
+    export_plot_html(fig, html_filename, title)
+    
+    # Export JSON version and return the data
+    json_data = export_plot_json(fig, json_filename, separate_files=separate_json_files)
+    
+    return json_data
+
+
 def create_plotly_bar_chart(data, x_col, y_col, title=None, error_col=None, 
                            add_value_labels=False):
     """

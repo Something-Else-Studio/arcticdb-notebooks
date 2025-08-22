@@ -1,0 +1,1066 @@
+{
+  "data": [
+    {
+      "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#75D0E8"
+      },
+      "name": "EPL",
+      "showlegend": true,
+      "x": [
+        "EPL"
+      ],
+      "y": [
+        1.3752631578947367
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: MLB<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#141C52"
+      },
+      "name": "MLB",
+      "showlegend": true,
+      "x": [
+        "MLB"
+      ],
+      "y": [
+        4.3877639214717865
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#783ABB"
+      },
+      "name": "NHL",
+      "showlegend": true,
+      "x": [
+        "NHL"
+      ],
+      "y": [
+        2.8075724393530996
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#F9F9F9"
+      },
+      "name": "SUP",
+      "showlegend": true,
+      "x": [
+        "SUP"
+      ],
+      "y": [
+        25.09825145711907
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: NFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#DDE5ED"
+      },
+      "name": "NFL",
+      "showlegend": true,
+      "x": [
+        "NFL"
+      ],
+      "y": [
+        22.6431640625
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: LAX<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#EEF2F6"
+      },
+      "name": "LAX",
+      "showlegend": true,
+      "x": [
+        "LAX"
+      ],
+      "y": [
+        10.26394163501899
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: AFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#43D6AC"
+      },
+      "name": "AFL",
+      "showlegend": true,
+      "x": [
+        "AFL"
+      ],
+      "y": [
+        88.30447070914697
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: IPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#A1EBD6"
+      },
+      "name": "IPL",
+      "showlegend": true,
+      "x": [
+        "IPL"
+      ],
+      "y": [
+        163.26766091051806
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: NBA<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#103392"
+      },
+      "name": "NBA",
+      "showlegend": true,
+      "x": [
+        "NBA"
+      ],
+      "y": [
+        102.23928186416784
+      ],
+      "type": "bar",
+      "xaxis": "x",
+      "yaxis": "y"
+    },
+    {
+      "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#75D0E8"
+      },
+      "name": "EPL",
+      "showlegend": false,
+      "x": [
+        "EPL"
+      ],
+      "y": [
+        1.2593510985128273
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: MLB<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#141C52"
+      },
+      "name": "MLB",
+      "showlegend": false,
+      "x": [
+        "MLB"
+      ],
+      "y": [
+        3.096956897527263
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#783ABB"
+      },
+      "name": "NHL",
+      "showlegend": false,
+      "x": [
+        "NHL"
+      ],
+      "y": [
+        1.6401877939643064
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#F9F9F9"
+      },
+      "name": "SUP",
+      "showlegend": false,
+      "x": [
+        "SUP"
+      ],
+      "y": [
+        11.973920234728412
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: NFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#DDE5ED"
+      },
+      "name": "NFL",
+      "showlegend": false,
+      "x": [
+        "NFL"
+      ],
+      "y": [
+        10.175132389930146
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: LAX<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#EEF2F6"
+      },
+      "name": "LAX",
+      "showlegend": false,
+      "x": [
+        "LAX"
+      ],
+      "y": [
+        3.9784518313917197
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: AFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#43D6AC"
+      },
+      "name": "AFL",
+      "showlegend": false,
+      "x": [
+        "AFL"
+      ],
+      "y": [
+        27.74690196301693
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: IPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#A1EBD6"
+      },
+      "name": "IPL",
+      "showlegend": false,
+      "x": [
+        "IPL"
+      ],
+      "y": [
+        31.41859051630165
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: NBA<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#103392"
+      },
+      "name": "NBA",
+      "showlegend": false,
+      "x": [
+        "NBA"
+      ],
+      "y": [
+        12.656484294592097
+      ],
+      "type": "bar",
+      "xaxis": "x2",
+      "yaxis": "y2"
+    },
+    {
+      "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#75D0E8"
+      },
+      "name": "EPL",
+      "showlegend": false,
+      "x": [
+        "EPL"
+      ],
+      "y": [
+        1.0348802623770739
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: MLB<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#141C52"
+      },
+      "name": "MLB",
+      "showlegend": false,
+      "x": [
+        "MLB"
+      ],
+      "y": [
+        1.0049660594988699
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#783ABB"
+      },
+      "name": "NHL",
+      "showlegend": false,
+      "x": [
+        "NHL"
+      ],
+      "y": [
+        0.4189863728022707
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#F9F9F9"
+      },
+      "name": "SUP",
+      "showlegend": false,
+      "x": [
+        "SUP"
+      ],
+      "y": [
+        0.8817358783277095
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: NFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#DDE5ED"
+      },
+      "name": "NFL",
+      "showlegend": false,
+      "x": [
+        "NFL"
+      ],
+      "y": [
+        0.2894386779707798
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: LAX<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#EEF2F6"
+      },
+      "name": "LAX",
+      "showlegend": false,
+      "x": [
+        "LAX"
+      ],
+      "y": [
+        0.4991791818889198
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: AFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#43D6AC"
+      },
+      "name": "AFL",
+      "showlegend": false,
+      "x": [
+        "AFL"
+      ],
+      "y": [
+        0.4798814553718312
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: IPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#A1EBD6"
+      },
+      "name": "IPL",
+      "showlegend": false,
+      "x": [
+        "IPL"
+      ],
+      "y": [
+        0.15663596799857293
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: NBA<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#103392"
+      },
+      "name": "NBA",
+      "showlegend": false,
+      "x": [
+        "NBA"
+      ],
+      "y": [
+        0.1834815937827362
+      ],
+      "type": "bar",
+      "xaxis": "x3",
+      "yaxis": "y3"
+    },
+    {
+      "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#75D0E8"
+      },
+      "name": "EPL",
+      "showlegend": false,
+      "x": [
+        "EPL"
+      ],
+      "y": [
+        7600.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: MLB<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#141C52"
+      },
+      "name": "MLB",
+      "showlegend": false,
+      "x": [
+        "MLB"
+      ],
+      "y": [
+        48594.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#783ABB"
+      },
+      "name": "NHL",
+      "showlegend": false,
+      "x": [
+        "NHL"
+      ],
+      "y": [
+        23744.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#F9F9F9"
+      },
+      "name": "SUP",
+      "showlegend": false,
+      "x": [
+        "SUP"
+      ],
+      "y": [
+        2402.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: NFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#DDE5ED"
+      },
+      "name": "NFL",
+      "showlegend": false,
+      "x": [
+        "NFL"
+      ],
+      "y": [
+        5120.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: LAX<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#EEF2F6"
+      },
+      "name": "LAX",
+      "showlegend": false,
+      "x": [
+        "LAX"
+      ],
+      "y": [
+        10006.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: AFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#43D6AC"
+      },
+      "name": "AFL",
+      "showlegend": false,
+      "x": [
+        "AFL"
+      ],
+      "y": [
+        3892.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: IPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#A1EBD6"
+      },
+      "name": "IPL",
+      "showlegend": false,
+      "x": [
+        "IPL"
+      ],
+      "y": [
+        1274.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: NBA<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#103392"
+      },
+      "name": "NBA",
+      "showlegend": false,
+      "x": [
+        "NBA"
+      ],
+      "y": [
+        24118.0
+      ],
+      "type": "bar",
+      "xaxis": "x4",
+      "yaxis": "y4"
+    },
+    {
+      "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#75D0E8"
+      },
+      "name": "EPL",
+      "showlegend": false,
+      "x": [
+        "EPL"
+      ],
+      "y": [
+        1.0920410991968725
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: MLB<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#141C52"
+      },
+      "name": "MLB",
+      "showlegend": false,
+      "x": [
+        "MLB"
+      ],
+      "y": [
+        1.4167985111369024
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#783ABB"
+      },
+      "name": "NHL",
+      "showlegend": false,
+      "x": [
+        "NHL"
+      ],
+      "y": [
+        1.7117384056171057
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#F9F9F9"
+      },
+      "name": "SUP",
+      "showlegend": false,
+      "x": [
+        "SUP"
+      ],
+      "y": [
+        2.09607638643906
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: NFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#DDE5ED"
+      },
+      "name": "NFL",
+      "showlegend": false,
+      "x": [
+        "NFL"
+      ],
+      "y": [
+        2.2253434348342123
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: LAX<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#EEF2F6"
+      },
+      "name": "LAX",
+      "showlegend": false,
+      "x": [
+        "LAX"
+      ],
+      "y": [
+        2.579883349103793
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: AFL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#43D6AC"
+      },
+      "name": "AFL",
+      "showlegend": false,
+      "x": [
+        "AFL"
+      ],
+      "y": [
+        3.1824983858322464
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: IPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#A1EBD6"
+      },
+      "name": "IPL",
+      "showlegend": false,
+      "x": [
+        "IPL"
+      ],
+      "y": [
+        5.19653040532821
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    },
+    {
+      "hovertemplate": "LEAGUE: NBA<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
+      "marker": {
+        "color": "#103392"
+      },
+      "name": "NBA",
+      "showlegend": false,
+      "x": [
+        "NBA"
+      ],
+      "y": [
+        8.078015939059235
+      ],
+      "type": "bar",
+      "xaxis": "x5",
+      "yaxis": "y5"
+    }
+  ],
+  "layout": {
+    "template": {
+      "layout": {
+        "colorway": [
+          "#75D0E8",
+          "#141C52",
+          "#783ABB",
+          "#F9F9F9",
+          "#DDE5ED",
+          "#EEF2F6",
+          "#43D6AC",
+          "#A1EBD6",
+          "#103392"
+        ],
+        "font": {
+          "color": "#141C52",
+          "size": 12
+        },
+        "hoverlabel": {
+          "bgcolor": "white",
+          "bordercolor": "#141C52",
+          "font": {
+            "color": "#141C52"
+          }
+        },
+        "legend": {
+          "bgcolor": "rgba(255,255,255,0.8)",
+          "bordercolor": "#141C52",
+          "borderwidth": 1,
+          "font": {
+            "color": "#141C52",
+            "size": 11
+          }
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#141C52",
+            "size": 16
+          },
+          "x": 0.05,
+          "xanchor": "left"
+        },
+        "xaxis": {
+          "gridcolor": "#E0E0E0",
+          "linecolor": "#141C52",
+          "tickcolor": "#141C52",
+          "tickfont": {
+            "color": "#141C52",
+            "size": 11
+          },
+          "title": {
+            "font": {
+              "color": "#141C52",
+              "size": 14
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "#E0E0E0",
+          "linecolor": "#141C52",
+          "tickcolor": "#141C52",
+          "tickfont": {
+            "color": "#141C52",
+            "size": 11
+          },
+          "title": {
+            "font": {
+              "color": "#141C52",
+              "size": 14
+            }
+          }
+        }
+      }
+    },
+    "xaxis": {
+      "anchor": "y",
+      "domain": [
+        0.0,
+        0.26666666666666666
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis": {
+      "anchor": "x",
+      "domain": [
+        0.575,
+        1.0
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "xaxis2": {
+      "anchor": "y2",
+      "domain": [
+        0.3666666666666667,
+        0.6333333333333333
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis2": {
+      "anchor": "x2",
+      "domain": [
+        0.575,
+        1.0
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "xaxis3": {
+      "anchor": "y3",
+      "domain": [
+        0.7333333333333334,
+        1.0
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis3": {
+      "anchor": "x3",
+      "domain": [
+        0.575,
+        1.0
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "xaxis4": {
+      "anchor": "y4",
+      "domain": [
+        0.0,
+        0.26666666666666666
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis4": {
+      "anchor": "x4",
+      "domain": [
+        0.0,
+        0.425
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "xaxis5": {
+      "anchor": "y5",
+      "domain": [
+        0.3666666666666667,
+        0.6333333333333333
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis5": {
+      "anchor": "x5",
+      "domain": [
+        0.0,
+        0.425
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "xaxis6": {
+      "anchor": "y6",
+      "domain": [
+        0.7333333333333334,
+        1.0
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "yaxis6": {
+      "anchor": "x6",
+      "domain": [
+        0.0,
+        0.425
+      ],
+      "title": {
+        "text": ""
+      }
+    },
+    "annotations": [
+      {
+        "font": {
+          "size": 16
+        },
+        "showarrow": false,
+        "text": "Mean",
+        "x": 0.13333333333333333,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "size": 16
+        },
+        "showarrow": false,
+        "text": "Std",
+        "x": 0.5,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "size": 16
+        },
+        "showarrow": false,
+        "text": "Skew",
+        "x": 0.8666666666666667,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 1.0,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "size": 16
+        },
+        "showarrow": false,
+        "text": "nobs",
+        "x": 0.13333333333333333,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.425,
+        "yanchor": "bottom",
+        "yref": "paper"
+      },
+      {
+        "font": {
+          "size": 16
+        },
+        "showarrow": false,
+        "text": "IR",
+        "x": 0.5,
+        "xanchor": "center",
+        "xref": "paper",
+        "y": 0.425,
+        "yanchor": "bottom",
+        "yref": "paper"
+      }
+    ],
+    "margin": {
+      "l": 50,
+      "r": 50,
+      "t": 50,
+      "b": 50
+    },
+    "title": {
+      "text": "Figure 1. Points Scored Statistics by League"
+    },
+    "showlegend": false,
+    "autosize": true,
+    "paper_bgcolor": "white",
+    "plot_bgcolor": "white"
+  },
+  "config": {
+    "displayModeBar": true,
+    "displaylogo": false,
+    "modeBarButtonsToRemove": [
+      "pan2d",
+      "lasso2d",
+      "select2d"
+    ],
+    "responsive": true,
+    "scrollZoom": true,
+    "doubleClick": "reset",
+    "showTips": false,
+    "toImageButtonOptions": {
+      "format": "png",
+      "filename": "chart",
+      "height": 500,
+      "width": 700,
+      "scale": 1
+    }
+  }
+}

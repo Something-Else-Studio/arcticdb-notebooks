@@ -1,0 +1,166 @@
+{
+  "data": [
+    {
+      "hovertemplate": "LEAGUE: %{x}<br>adj. $R^2$: %{y}<extra></extra>",
+      "marker": {
+        "color": "#783ABB"
+      },
+      "text": [
+        0.94,
+        0.89,
+        0.91,
+        0.84,
+        0.81,
+        0.84,
+        0.9,
+        0.57,
+        0.94
+      ],
+      "textposition": "outside",
+      "texttemplate": "%{text:.2f}",
+      "x": [
+        "EPL",
+        "MLB",
+        "NHL",
+        "SUP",
+        "NFL",
+        "LAX",
+        "AFL",
+        "IPL",
+        "NBA"
+      ],
+      "y": [
+        0.94,
+        0.89,
+        0.91,
+        0.84,
+        0.81,
+        0.84,
+        0.9,
+        0.57,
+        0.94
+      ],
+      "type": "bar"
+    }
+  ],
+  "layout": {
+    "template": {
+      "layout": {
+        "colorway": [
+          "#75D0E8",
+          "#141C52",
+          "#783ABB",
+          "#F9F9F9",
+          "#DDE5ED",
+          "#EEF2F6",
+          "#43D6AC",
+          "#A1EBD6",
+          "#103392"
+        ],
+        "font": {
+          "color": "#141C52",
+          "size": 12
+        },
+        "hoverlabel": {
+          "bgcolor": "white",
+          "bordercolor": "#141C52",
+          "font": {
+            "color": "#141C52"
+          }
+        },
+        "legend": {
+          "bgcolor": "rgba(255,255,255,0.8)",
+          "bordercolor": "#141C52",
+          "borderwidth": 1,
+          "font": {
+            "color": "#141C52",
+            "size": 11
+          }
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#141C52",
+            "size": 16
+          },
+          "x": 0.05,
+          "xanchor": "left"
+        },
+        "xaxis": {
+          "gridcolor": "#E0E0E0",
+          "linecolor": "#141C52",
+          "tickcolor": "#141C52",
+          "tickfont": {
+            "color": "#141C52",
+            "size": 11
+          },
+          "title": {
+            "font": {
+              "color": "#141C52",
+              "size": 14
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "#E0E0E0",
+          "linecolor": "#141C52",
+          "tickcolor": "#141C52",
+          "tickfont": {
+            "color": "#141C52",
+            "size": 11
+          },
+          "title": {
+            "font": {
+              "color": "#141C52",
+              "size": 14
+            }
+          }
+        }
+      }
+    },
+    "margin": {
+      "l": 50,
+      "r": 50,
+      "t": 50,
+      "b": 50
+    },
+    "title": {
+      "text": "Figure 3a. James Model Adj Rsq by League, 2010-2019 Seasons"
+    },
+    "xaxis": {
+      "title": {
+        "text": "LEAGUE"
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "adj. $R^2$"
+      }
+    },
+    "showlegend": false,
+    "autosize": true,
+    "paper_bgcolor": "white",
+    "plot_bgcolor": "white"
+  },
+  "config": {
+    "displayModeBar": true,
+    "displaylogo": false,
+    "modeBarButtonsToRemove": [
+      "pan2d",
+      "lasso2d",
+      "select2d"
+    ],
+    "responsive": true,
+    "scrollZoom": true,
+    "doubleClick": "reset",
+    "showTips": false,
+    "toImageButtonOptions": {
+      "format": "png",
+      "filename": "chart",
+      "height": 500,
+      "width": 700,
+      "scale": 1
+    }
+  }
+}

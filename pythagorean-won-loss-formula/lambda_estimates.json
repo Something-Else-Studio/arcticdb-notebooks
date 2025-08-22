@@ -1,0 +1,171 @@
+{
+  "data": [
+    {
+      "error_y": {
+        "array": [
+          0.04,
+          0.08,
+          0.08,
+          0.18,
+          0.16,
+          0.1,
+          0.18,
+          1.3,
+          0.42
+        ],
+        "color": "#783ABB",
+        "thickness": 2,
+        "type": "data",
+        "visible": true,
+        "width": 3
+      },
+      "hovertemplate": "LEAGUE: %{x}<br>\u03bb: %{y}<extra></extra>",
+      "marker": {
+        "color": "#75D0E8"
+      },
+      "x": [
+        "EPL",
+        "MLB",
+        "NHL",
+        "SUP",
+        "NFL",
+        "LAX",
+        "AFL",
+        "IPL",
+        "NBA"
+      ],
+      "y": [
+        1.24,
+        1.78,
+        2.06,
+        2.6,
+        2.84,
+        3.17,
+        3.57,
+        6.79,
+        14.32
+      ],
+      "type": "bar"
+    }
+  ],
+  "layout": {
+    "template": {
+      "layout": {
+        "colorway": [
+          "#75D0E8",
+          "#141C52",
+          "#783ABB",
+          "#F9F9F9",
+          "#DDE5ED",
+          "#EEF2F6",
+          "#43D6AC",
+          "#A1EBD6",
+          "#103392"
+        ],
+        "font": {
+          "color": "#141C52",
+          "size": 12
+        },
+        "hoverlabel": {
+          "bgcolor": "white",
+          "bordercolor": "#141C52",
+          "font": {
+            "color": "#141C52"
+          }
+        },
+        "legend": {
+          "bgcolor": "rgba(255,255,255,0.8)",
+          "bordercolor": "#141C52",
+          "borderwidth": 1,
+          "font": {
+            "color": "#141C52",
+            "size": 11
+          }
+        },
+        "paper_bgcolor": "white",
+        "plot_bgcolor": "white",
+        "title": {
+          "font": {
+            "color": "#141C52",
+            "size": 16
+          },
+          "x": 0.05,
+          "xanchor": "left"
+        },
+        "xaxis": {
+          "gridcolor": "#E0E0E0",
+          "linecolor": "#141C52",
+          "tickcolor": "#141C52",
+          "tickfont": {
+            "color": "#141C52",
+            "size": 11
+          },
+          "title": {
+            "font": {
+              "color": "#141C52",
+              "size": 14
+            }
+          }
+        },
+        "yaxis": {
+          "gridcolor": "#E0E0E0",
+          "linecolor": "#141C52",
+          "tickcolor": "#141C52",
+          "tickfont": {
+            "color": "#141C52",
+            "size": 11
+          },
+          "title": {
+            "font": {
+              "color": "#141C52",
+              "size": 14
+            }
+          }
+        }
+      }
+    },
+    "margin": {
+      "l": 50,
+      "r": 50,
+      "t": 50,
+      "b": 50
+    },
+    "title": {
+      "text": "Figure 3a. Estimates of \u03bb by League, 2010-2019 Seasons"
+    },
+    "xaxis": {
+      "title": {
+        "text": "LEAGUE"
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "\u03bb"
+      }
+    },
+    "showlegend": false,
+    "autosize": true,
+    "paper_bgcolor": "white",
+    "plot_bgcolor": "white"
+  },
+  "config": {
+    "displayModeBar": true,
+    "displaylogo": false,
+    "modeBarButtonsToRemove": [
+      "pan2d",
+      "lasso2d",
+      "select2d"
+    ],
+    "responsive": true,
+    "scrollZoom": true,
+    "doubleClick": "reset",
+    "showTips": false,
+    "toImageButtonOptions": {
+      "format": "png",
+      "filename": "chart",
+      "height": 500,
+      "width": 700,
+      "scale": 1
+    }
+  }
+}
