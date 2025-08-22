@@ -1,0 +1,22 @@
+,YEAR_ID,TEAM_ID,OPP_TEAM_ID,PS,PA,date,home,wi,LEAGUE
+0,1897,Carlton,Fitzroy,16,49,1897-05-08,0,0.0,AFL
+1,1897,Carlton,South Melbourne,36,40,1897-05-15,0,0.0,AFL
+2,1897,Carlton,Essendon,41,78,1897-05-24,0,0.0,AFL
+3,1897,Carlton,Geelong,22,44,1897-05-29,0,0.0,AFL
+4,1897,Carlton,Melbourne,26,107,1897-06-05,0,0.0,AFL
+5,1897,Carlton,St Kilda,35,24,1897-06-19,0,1.0,AFL
+6,1897,Carlton,Collingwood,35,41,1897-06-22,1,0.0,AFL
+7,1897,Carlton,Fitzroy,9,47,1897-06-26,1,0.0,AFL
+8,1897,Carlton,South Melbourne,28,74,1897-07-03,1,0.0,AFL
+9,1897,Carlton,Essendon,13,42,1897-07-10,1,0.0,AFL
+...,...,...,...,...,...,...,...,...,...
+853142,2019,Waratahs,Blues,29,32,2019-04-06,0,0.0,SUP
+853143,2019,Waratahs,Rebels,23,20,2019-04-20,1,1.0,SUP
+853144,2019,Waratahs,Sharks,15,23,2019-04-27,1,0.0,SUP
+853145,2019,Waratahs,Bulls,21,28,2019-05-04,0,0.0,SUP
+853146,2019,Waratahs,Lions,28,29,2019-05-11,0,0.0,SUP
+853147,2019,Waratahs,Reds,40,32,2019-05-18,0,1.0,SUP
+853148,2019,Waratahs,Jaguares,15,23,2019-05-25,1,0.0,SUP
+853149,2019,Waratahs,Rebels,20,15,2019-05-31,0,1.0,SUP
+853150,2019,Waratahs,Brumbies,24,35,2019-06-08,1,0.0,SUP
+853151,2019,Waratahs,Highlanders,12,49,2019-06-14,0,0.0,SUP

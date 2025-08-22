@@ -55,6 +55,91 @@ def style_table(df, hide_index=True, max_rows=20):
     return styled_df
 
 
+def style_head_tail_table(df, head_rows=10, tail_rows=10, hide_index=True):
+    """
+    Creates a styled table showing the first N and last N rows with ellipsis in between.
+    
+    Args:
+        df (pd.DataFrame): The DataFrame to display.
+        head_rows (int): Number of rows to show from the beginning.
+        tail_rows (int): Number of rows to show from the end.
+        hide_index (bool): Whether to hide the DataFrame index.
+    
+    Returns:
+        Styler object: A styled DataFrame object ready for display.
+    """
+    import pandas as pd
+    
+    total_rows = len(df)
+    
+    # If dataframe has fewer rows than head_rows + tail_rows, just style the whole thing
+    if total_rows <= head_rows + tail_rows:
+        return style_table(df, hide_index=hide_index, max_rows=None)
+    
+    # Get the first and last rows
+    head_df = df.head(head_rows).copy()
+    tail_df = df.tail(tail_rows).copy()
+    
+    # Create ellipsis row
+    ellipsis_data = {}
+    for col in df.columns:
+        ellipsis_data[col] = '...'
+    
+    # Create a single ellipsis row with the same structure
+    ellipsis_df = pd.DataFrame([ellipsis_data], index=['...'])
+    
+    # Combine head, ellipsis, and tail
+    display_df = pd.concat([head_df, ellipsis_df, tail_df], ignore_index=False)
+    
+    # Define theme colors (same as style_table)
+    theme = {
+        'header_bg': '#141C52',
+        'header_font': '#F9F9F9',
+        'cell_bg': '#75D0E8',
+        'cell_font': '#141C52',
+        'hover_bg': '#783ABB',
+        'hover_font': '#F9F9F9',
+        'ellipsis_bg': '#DDE5ED',  # Lighter color for ellipsis row
+        'ellipsis_font': '#141C52'
+    }
+
+    # Define styles with special styling for ellipsis row
+    styles = [
+        {'selector': 'th',  # Style the table headers
+         'props': [('background-color', theme['header_bg']),
+                   ('color', theme['header_font']),
+                   ('font-weight', 'bold'),
+                   ('text-align', 'left'),
+                   ('padding', '10px')]},
+        {'selector': 'td',  # Style the data cells
+         'props': [('background-color', theme['cell_bg']),
+                   ('color', theme['cell_font']),
+                   ('padding', '8px')]},
+        {'selector': 'tr:hover td',  # Style rows on hover
+         'props': [('background-color', theme['hover_bg']),
+                   ('color', theme['hover_font'])]},
+    ]
+
+    # Apply the styles
+    styled_df = display_df.style.set_table_styles(styles)
+    
+    # Apply special styling to the ellipsis row
+    def highlight_ellipsis(row):
+        if row.name == '...':
+            return [f'background-color: {theme["ellipsis_bg"]}; color: {theme["ellipsis_font"]}; text-align: center; font-style: italic;'] * len(row)
+        return [''] * len(row)
+    
+    styled_df = styled_df.apply(highlight_ellipsis, axis=1)
+
+    if hide_index:
+        styled_df = styled_df.hide(axis="index")
+    
+    # Add a caption showing the total size
+    styled_df = styled_df.set_caption(f"{total_rows} rows × {len(df.columns)} columns")
+    
+    return styled_df
+
+
 def export_table_html(styled_df, filename, title="Sports Data Table"):
     """Export a styled DataFrame to a standalone HTML file"""
     html_string = f"""
@@ -95,6 +180,44 @@ def export_table_html(styled_df, filename, title="Sports Data Table"):
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(html_string)
     print(f"Exported: {filename}")
+
+
+def export_table_csv(df, filename):
+    """
+    Export a DataFrame to CSV format.
+    
+    Args:
+        df: pandas DataFrame (the underlying data, not styled)
+        filename: Output filename (should end with .csv)
+    """
+    df.to_csv(filename, index=True)
+    print(f"Exported: {filename}")
+
+
+def export_table(styled_df, base_filename, title="Table Export"):
+    """
+    Export a styled DataFrame to both HTML and CSV formats in one go.
+    
+    Args:
+        styled_df: Styled DataFrame object from style_table() or style_head_tail_table()
+        base_filename: Base filename (without extension) for exports
+        title: Title for the HTML page
+    
+    Returns:
+        pandas.DataFrame: The underlying DataFrame that was exported
+    """
+    # Generate filenames
+    html_filename = f"{base_filename}.html"
+    csv_filename = f"{base_filename}.csv"
+    
+    # Export HTML version
+    export_table_html(styled_df, html_filename, title)
+    
+    # Extract underlying DataFrame from styled object and export to CSV
+    underlying_df = styled_df.data
+    export_table_csv(underlying_df, csv_filename)
+    
+    return underlying_df
 
 
 import seaborn as sns
@@ -1179,7 +1302,7 @@ def export_plot_json(fig, filename, separate_files=False):
             json.dump(json_data, f, indent=2, cls=PlotlyJSONEncoder)
         print(f"Exported: {filename}")
     
-    return json_data
+    
 
 
 # Example usage in notebook cells:
