@@ -3,7 +3,7 @@
     {
       "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "EPL",
       "showlegend": true,
@@ -37,7 +37,7 @@
     {
       "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#783ABB"
+        "color": "#F9F9F9"
       },
       "name": "NHL",
       "showlegend": true,
@@ -54,7 +54,7 @@
     {
       "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#F9F9F9"
+        "color": "#75D0E8"
       },
       "name": "SUP",
       "showlegend": true,
@@ -156,7 +156,7 @@
     {
       "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "EPL",
       "showlegend": false,
@@ -190,7 +190,7 @@
     {
       "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#783ABB"
+        "color": "#F9F9F9"
       },
       "name": "NHL",
       "showlegend": false,
@@ -207,7 +207,7 @@
     {
       "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#F9F9F9"
+        "color": "#75D0E8"
       },
       "name": "SUP",
       "showlegend": false,
@@ -309,7 +309,7 @@
     {
       "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "EPL",
       "showlegend": false,
@@ -343,7 +343,7 @@
     {
       "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#783ABB"
+        "color": "#F9F9F9"
       },
       "name": "NHL",
       "showlegend": false,
@@ -360,7 +360,7 @@
     {
       "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#F9F9F9"
+        "color": "#75D0E8"
       },
       "name": "SUP",
       "showlegend": false,
@@ -462,7 +462,7 @@
     {
       "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "EPL",
       "showlegend": false,
@@ -496,7 +496,7 @@
     {
       "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#783ABB"
+        "color": "#F9F9F9"
       },
       "name": "NHL",
       "showlegend": false,
@@ -513,7 +513,7 @@
     {
       "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#F9F9F9"
+        "color": "#75D0E8"
       },
       "name": "SUP",
       "showlegend": false,
@@ -615,7 +615,7 @@
     {
       "hovertemplate": "LEAGUE: EPL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "EPL",
       "showlegend": false,
@@ -649,7 +649,7 @@
     {
       "hovertemplate": "LEAGUE: NHL<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#783ABB"
+        "color": "#F9F9F9"
       },
       "name": "NHL",
       "showlegend": false,
@@ -666,7 +666,7 @@
     {
       "hovertemplate": "LEAGUE: SUP<br>LEAGUE: %{x}<br>value: %{y}<extra></extra>",
       "marker": {
-        "color": "#F9F9F9"
+        "color": "#75D0E8"
       },
       "name": "SUP",
       "showlegend": false,
@@ -770,10 +770,10 @@
     "template": {
       "layout": {
         "colorway": [
-          "#75D0E8",
-          "#141C52",
           "#783ABB",
+          "#141C52",
           "#F9F9F9",
+          "#75D0E8",
           "#DDE5ED",
           "#EEF2F6",
           "#43D6AC",

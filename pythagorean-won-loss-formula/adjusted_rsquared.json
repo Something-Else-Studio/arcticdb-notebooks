@@ -3,7 +3,7 @@
     {
       "hovertemplate": "LEAGUE: %{x}<br>adj. $R^2$: %{y}<extra></extra>",
       "marker": {
-        "color": "#783ABB"
+        "color": "#75D0E8"
       },
       "text": [
         0.94,
@@ -47,10 +47,10 @@
     "template": {
       "layout": {
         "colorway": [
-          "#75D0E8",
-          "#141C52",
           "#783ABB",
+          "#141C52",
           "#F9F9F9",
+          "#75D0E8",
           "#DDE5ED",
           "#EEF2F6",
           "#43D6AC",

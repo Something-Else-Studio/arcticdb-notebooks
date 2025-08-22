@@ -3,7 +3,7 @@
     {
       "hovertemplate": "AFL<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "AFL",
       "nbinsx": 30,
@@ -3909,7 +3909,7 @@
     {
       "hovertemplate": "EPL<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "EPL",
       "nbinsx": 10,
@@ -11523,7 +11523,7 @@
     {
       "hovertemplate": "IPL<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "IPL",
       "nbinsx": 30,
@@ -12811,7 +12811,7 @@
     {
       "hovertemplate": "LAX<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "LAX",
       "nbinsx": 13,
@@ -22831,7 +22831,7 @@
     {
       "hovertemplate": "MLB<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "MLB",
       "nbinsx": 12,
@@ -71439,7 +71439,7 @@
     {
       "hovertemplate": "NBA<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "NBA",
       "nbinsx": 30,
@@ -95571,7 +95571,7 @@
     {
       "hovertemplate": "NFL<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "NFL",
       "nbinsx": 18,
@@ -100705,7 +100705,7 @@
     {
       "hovertemplate": "NHL<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "NHL",
       "nbinsx": 11,
@@ -124463,7 +124463,7 @@
     {
       "hovertemplate": "SUP<br>Range: %{x}<br>Count: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8"
+        "color": "#783ABB"
       },
       "name": "SUP",
       "nbinsx": 28,
@@ -126881,10 +126881,10 @@
     "template": {
       "layout": {
         "colorway": [
-          "#75D0E8",
-          "#141C52",
           "#783ABB",
+          "#141C52",
           "#F9F9F9",
+          "#75D0E8",
           "#DDE5ED",
           "#EEF2F6",
           "#43D6AC",
@@ -127258,9 +127258,7 @@
       "t": 50,
       "b": 50
     },
-    "title": {
-      "text": "Figure 1. Points per game distributions by league, 2010-2019"
-    },
+    "title": {},
     "showlegend": false,
     "autosize": true,
     "paper_bgcolor": "white",

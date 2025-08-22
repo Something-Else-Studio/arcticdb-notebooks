@@ -476,7 +476,7 @@
     {
       "hovertemplate": "AFL<br>Year: %{x}<br>\u03bb: %{y:.2f}<extra></extra>",
       "line": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "width": 2
       },
       "mode": "lines",
@@ -1226,7 +1226,7 @@
     {
       "hovertemplate": "EPL<br>Year: %{x}<br>\u03bb: %{y:.2f}<extra></extra>",
       "line": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "width": 2
       },
       "mode": "lines",
@@ -2064,7 +2064,7 @@
     {
       "hovertemplate": "MLB<br>Year: %{x}<br>\u03bb: %{y:.2f}<extra></extra>",
       "line": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "width": 2
       },
       "mode": "lines",
@@ -2634,7 +2634,7 @@
     {
       "hovertemplate": "NBA<br>Year: %{x}<br>\u03bb: %{y:.2f}<extra></extra>",
       "line": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "width": 2
       },
       "mode": "lines",
@@ -3152,7 +3152,7 @@
     {
       "hovertemplate": "NFL<br>Year: %{x}<br>\u03bb: %{y:.2f}<extra></extra>",
       "line": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "width": 2
       },
       "mode": "lines",
@@ -3736,7 +3736,7 @@
     {
       "hovertemplate": "NHL<br>Year: %{x}<br>\u03bb: %{y:.2f}<extra></extra>",
       "line": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "width": 2
       },
       "mode": "lines",
@@ -3941,10 +3941,10 @@
     "template": {
       "layout": {
         "colorway": [
-          "#75D0E8",
-          "#141C52",
           "#783ABB",
+          "#141C52",
           "#F9F9F9",
+          "#75D0E8",
           "#DDE5ED",
           "#EEF2F6",
           "#43D6AC",
@@ -4206,9 +4206,6 @@
       "r": 50,
       "t": 50,
       "b": 50
-    },
-    "title": {
-      "text": "Figure 4. Rolling 10-year estimates of \u03bb, all available seasons through 2019"
     },
     "showlegend": true,
     "autosize": true,

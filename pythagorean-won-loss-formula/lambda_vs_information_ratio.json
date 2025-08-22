@@ -3,7 +3,7 @@
     {
       "hovertemplate": "IR10: %{x}<br>\u03bb: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "size": 8
       },
       "mode": "markers+text",
@@ -20,7 +20,7 @@
         "SUP"
       ],
       "textfont": {
-        "color": "#141C52",
+        "color": "#103392",
         "size": 9
       },
       "textposition": "top center",
@@ -267,10 +267,10 @@
     "template": {
       "layout": {
         "colorway": [
-          "#75D0E8",
-          "#141C52",
           "#783ABB",
+          "#141C52",
           "#F9F9F9",
+          "#75D0E8",
           "#DDE5ED",
           "#EEF2F6",
           "#43D6AC",
@@ -363,9 +363,7 @@
         16
       ]
     },
-    "title": {
-      "text": "Figure 3b. Estimates of \u03bb vs. League Information Ratio, 2010-2019 Seasons"
-    },
+    "title": {},
     "autosize": true,
     "paper_bgcolor": "white",
     "plot_bgcolor": "white"

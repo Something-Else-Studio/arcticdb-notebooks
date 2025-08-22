@@ -1,5 +1,30 @@
 # styling.py
 
+# Define the theme colors (same as in setup_chart_styling)
+theme = {
+    'header_bg': '#141C52',
+    'header_font': '#F9F9F9',
+    'cell_bg': '#75D0E8',
+    'cell_font': '#141C52',
+    'hover_bg': '#783ABB',
+    'hover_font': '#F9F9F9',
+    'ellipsis_bg': '#DDE5ED',  # Lighter color for ellipsis row
+    'ellipsis_font': '#141C52'
+}
+
+# Figma color palette
+palette_colors = [
+    '#783ABB',            # PRIMARY/NEON PURPLE - primary
+    '#141C52',            # PRIMARY/DARK BLUE - secondary  
+    '#F9F9F9',            # PRIMARY/OFF WHITE - neutral
+    '#75D0E8',            # SECONDARY/SKY BLUE - accent
+    '#DDE5ED',            # SECONDARY/COOL GREY - light gray
+    '#EEF2F6',            # SECONDARY/COOL GREY 50 - lighter gray
+    '#43D6AC',            # PRIMARY/NEON GREEN - complementary
+    '#A1EBD6',            # PRIMARY/NEON GREEN 50 - lighter green
+    '#103392'             # SECONDARY/DEEP BLUE - deeper blue variant
+]
+
 def style_table(df, hide_index=True, max_rows=20):
     """
     Applies a custom theme to a Pandas DataFrame.
@@ -16,16 +41,6 @@ def style_table(df, hide_index=True, max_rows=20):
     if max_rows is not None:
         df = df.head(max_rows)
     
-    # Define your theme colors here
-    theme = {
-        'header_bg': '#141C52',
-        'header_font': '#F9F9F9',
-        'cell_bg': '#75D0E8',
-        'cell_font': '#141C52',
-        'hover_bg': '#783ABB',
-        'hover_font': '#F9F9F9'
-    }
-
     # Define the styles
     styles = [
         {'selector': 'th', # Style the table headers
@@ -91,17 +106,6 @@ def style_head_tail_table(df, head_rows=10, tail_rows=10, hide_index=True):
     # Combine head, ellipsis, and tail
     display_df = pd.concat([head_df, ellipsis_df, tail_df], ignore_index=False)
     
-    # Define theme colors (same as style_table)
-    theme = {
-        'header_bg': '#141C52',
-        'header_font': '#F9F9F9',
-        'cell_bg': '#75D0E8',
-        'cell_font': '#141C52',
-        'hover_bg': '#783ABB',
-        'hover_font': '#F9F9F9',
-        'ellipsis_bg': '#DDE5ED',  # Lighter color for ellipsis row
-        'ellipsis_font': '#141C52'
-    }
 
     # Define styles with special styling for ellipsis row
     styles = [
@@ -243,28 +247,6 @@ def setup_chart_styling():
     Returns:
         dict: Color palette and styling options
     """
-    # Define the theme colors (same as in style_table)
-    theme = {
-        'header_bg': '#141C52',
-        'header_font': '#F9F9F9',
-        'cell_bg': '#75D0E8',
-        'cell_font': '#141C52',
-        'hover_bg': '#783ABB',
-        'hover_font': '#F9F9F9'
-    }
-    
-    # Create a color palette using Figma theme colors
-    palette_colors = [
-        '#75D0E8',            # SECONDARY/SKY BLUE - primary
-        '#141C52',            # PRIMARY/DARK BLUE - secondary  
-        '#783ABB',            # PRIMARY/NEON PURPLE - accent
-        '#F9F9F9',            # PRIMARY/OFF WHITE - neutral
-        '#DDE5ED',            # SECONDARY/COOL GREY - light gray
-        '#EEF2F6',            # SECONDARY/COOL GREY 50 - lighter gray
-        '#43D6AC',            # PRIMARY/NEON GREEN - complementary
-        '#A1EBD6',            # PRIMARY/NEON GREEN 50 - lighter green
-        '#103392'             # SECONDARY/DEEP BLUE - deeper blue variant
-    ]
     
     # Set seaborn style
     sns.set_style("whitegrid", {
@@ -301,11 +283,11 @@ def setup_chart_styling():
     return {
         'theme': theme,
         'palette': palette_colors,
-        'primary_color': theme['cell_bg'],
-        'secondary_color': theme['header_bg'],
-        'accent_color': theme['hover_bg'],
-        'text_color': theme['header_bg'],
-        'light_text': theme['header_font']
+        'primary_color': palette_colors[0],
+        'secondary_color': palette_colors[1],
+        'accent_color': palette_colors[3],
+        'text_color': palette_colors[8],
+        'light_text': palette_colors[4]
     }
 
 
@@ -430,28 +412,6 @@ def setup_plotly_theme():
     if not PLOTLY_AVAILABLE:
         raise ImportError("Plotly not available. Install with: pip install plotly")
     
-    # Define the theme colors (same as in setup_chart_styling)
-    theme = {
-        'header_bg': '#141C52',
-        'header_font': '#F9F9F9',
-        'cell_bg': '#75D0E8',
-        'cell_font': '#141C52',
-        'hover_bg': '#783ABB',
-        'hover_font': '#F9F9F9'
-    }
-    
-    # Figma color palette
-    palette_colors = [
-        '#75D0E8',            # SECONDARY/SKY BLUE - primary
-        '#141C52',            # PRIMARY/DARK BLUE - secondary  
-        '#783ABB',            # PRIMARY/NEON PURPLE - accent
-        '#F9F9F9',            # PRIMARY/OFF WHITE - neutral
-        '#DDE5ED',            # SECONDARY/COOL GREY - light gray
-        '#EEF2F6',            # SECONDARY/COOL GREY 50 - lighter gray
-        '#43D6AC',            # PRIMARY/NEON GREEN - complementary
-        '#A1EBD6',            # PRIMARY/NEON GREEN 50 - lighter green
-        '#103392'             # SECONDARY/DEEP BLUE - deeper blue variant
-    ]
     
     # Create custom Plotly template
     custom_template = go.layout.Template(
@@ -501,11 +461,11 @@ def setup_plotly_theme():
         'theme': theme,
         'palette': palette_colors,
         'template': custom_template,
-        'primary_color': theme['cell_bg'],
-        'secondary_color': theme['header_bg'],
-        'accent_color': theme['hover_bg'],
-        'text_color': theme['header_bg'],
-        'light_text': theme['header_font']
+        'primary_color': palette_colors[0],
+        'secondary_color': palette_colors[1],
+        'accent_color': palette_colors[3],
+        'text_color': palette_colors[8],
+        'light_text': palette_colors[4]
     }
 
 

@@ -3,7 +3,7 @@
     {
       "hovertemplate": "LEAGUE: EPL<br>lnPSPA: %{x}<br>lnwi: %{y}<extra></extra>",
       "marker": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "size": 8
       },
       "mode": "markers",
@@ -4943,7 +4943,7 @@
     {
       "hovertemplate": "Regression line<extra></extra>",
       "line": {
-        "color": "#75D0E8",
+        "color": "#783ABB",
         "dash": "dash",
         "width": 2
       },
@@ -8605,10 +8605,10 @@
     "template": {
       "layout": {
         "colorway": [
-          "#75D0E8",
-          "#141C52",
           "#783ABB",
+          "#141C52",
           "#F9F9F9",
+          "#75D0E8",
           "#DDE5ED",
           "#EEF2F6",
           "#43D6AC",
